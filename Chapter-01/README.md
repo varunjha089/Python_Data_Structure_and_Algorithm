@@ -77,6 +77,10 @@ Types of **Objects**:
 
 ## Strings
 
+- Strings are immutable sequence objects. As string, being **im-mutable**, do not change the instance; each method simply returns a value.
+
+The Cheat sheet on most commonly used `strings` methods.
+
 | Methods | Description |
 |--- |--- |
 | `s.count(substring, [start, end])` | Counts the occurances of a substring with optional *start* and *end* parameter. |
@@ -90,3 +94,84 @@ Types of **Objects**:
 | `s.replace(old, new [maxreplace])` | Replace old substring with new substring. |
 | `s.strip([character')` | Remove the whitespace or optional characters. |
 | `s.split([separator], [maxsplit])` | Splits a string separated by whitespace or an optional separator. Returns a list. |
+
+- Strings like all sequence types support **indexing** and **slicing**. The syntax is as follows:-
+
+```python
+>>> string_variable[start:end]
+```
+Here `start` is the beginning, but ends at `end - 1`th value.
+Some common examples are:
+
+```python
+>>> name = "Varun Kumar"
+>>> len(name)
+11
+>>> name[:]
+'Varun Kumar'
+>>> name[:11]
+'Varun Kumar'
+>>> name[:5]
+'Varun'
+>>> name[3:5]
+'un'
+>>> name[3:]
+'un Kumar'
+```
+
+- Between `[]` all shorts of python expression can be passed. For example., 
+
+```python
+>>> name[len(name) - 1]
+'r'
+>>> name[:len(name)]
+'Varun Kumar'
+>>> name[2+2]
+'n'
+>>> name[4]
+'n'
+```
+
+Another example is thrversing through string with a loop, eg.,
+
+```python
+>>> name = 'Varun Kumar'
+>>> for i in enumerate(name[:]):
+...     print(i)
+... 
+(0, 'V')
+(1, 'a')
+(2, 'r')
+(3, 'u')
+(4, 'n')
+(5, ' ')
+(6, 'K')
+(7, 'u')
+(8, 'm')
+(9, 'a')
+(10, 'r')
+```
+
+Some common concatenation operation on strings.
+
+```python
+>>> name = 'Varun Kumar'
+>>> name[:5] + " Rocket Man " + name[6:]
+'Varun Rocket Man Kumar'
+```
+
+Some more concatenation operation on strings.
+
+```python
+>>> x = '5'
+>>> y = '7'
+>>> x + y 
+'57'
+>>> type(x + y)
+<class 'str'>
+>>> int(x) + int(y)
+12
+>>> type(int(x) + int(y))
+<class 'int'>
+```
+
