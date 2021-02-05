@@ -31,5 +31,5 @@ def binary_search(lists, term):
 
 To quickely test the programe 
 ```console
-ubuntu@ip:~ python3 -c "import bs_01 as bs; print(bs.binary_search([1, 5, 6, 9, 8, 12],6))"
+ubuntu@ip:~$ python3 -c "import bs_01 as bs; print(bs.binary_search([1, 5, 6, 9, 8, 12],6))"
 ```
