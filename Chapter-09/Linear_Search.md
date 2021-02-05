@@ -49,6 +49,6 @@ def search(lists, term):
     return None
 ```
 
-[Link to .PY file](/chapter-09/ls_02.py)
+[Link to .PY file](/Chapter-09/ls_02.py)
 
 #### The time complexity of **`Ordered Linear Search`** is **`O(N)`**.
