@@ -33,4 +33,30 @@ To quickely test the programe
 ```console
 ubuntu@ip:~$ python3 -c "import bs_01 as bs; print(bs.binary_search([1, 5, 6, 9, 8, 12],6))"
 ```
- 
+
+
+The iterative example of binary search is:-
+
+```python
+def binary_search(lists, start, end, term):
+    if end < start:
+        return None
+    else:
+        MID_POINT = int(start + ((end - start) / 2))
+
+        if lists[MID_POINT] > term:
+            return binary_search(lists, start, MID_POINT - 1, term)
+        elif lists[MID_POINT] < term:
+            return binary_search(lists, MID_POINT + 1, end, term)
+        else:
+            return MID_POINT
+```
+
+[Link to .PY file](/Chapter-09/bs_02.py)
+
+To quickely test the programe 
+```console
+ubuntu@ip:~$ python3 -c "import bs_02 as bs; print(bs.binary_search([2, 4, 5, 12, 43, 54, 60, 77], 0, 7, 2))"
+```
+
+  #### The worst time complexity of **`Binary Search`** is **`O(Log N)`**.
