@@ -60,3 +60,6 @@ ubuntu@ip:~$ python3 -c "import bs_02 as bs; print(bs.binary_search([2, 4, 5, 12
 ```
 
   #### The worst time complexity of **`Binary Search`** is **`O(Log N)`**.
+
+
+### There is one more variant of **`Binary Search`**, called **[Interpolation Search](/Chapter-09/Interpolation_Search.md)**
