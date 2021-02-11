@@ -18,7 +18,7 @@ def nearest_mid(lists, start, end, value):
     return start + (( end - start) / (lists[end] - lists[start] )) * ( value - lists[start])
 ```
 
-[link to .PY file](/Chapter-09/is.py)
+[link to .PY file](/Chapter-09/is_01.py)
 
 To quickely test the programe 
 ```console
