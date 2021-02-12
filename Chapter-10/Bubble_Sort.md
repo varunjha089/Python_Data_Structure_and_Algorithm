@@ -34,11 +34,7 @@ To do so we need to create a temporary storage area.
 
 Check the source file [here](/Chapter-10/bubbleSort.py).
 
-<iframe
-  src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=19px&ph=22px&ln=true&fl=1&fm=Hack&fs=16.5px&lh=176%25&si=false&es=2x&wm=false&code=def%2520bubble%28lists%29%253A%250A%2520%2520%2520%2520iterationNumber%2520%253D%2520len%28lists%29%2520-%25201%250A%2520%2520%2520%2520for%2520i%2520in%2520range%28iterationNumber%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520for%2520j%2520in%2520range%28iterationNumber%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520if%2520lists%255Bj%255D%2520%253E%2520lists%255Bj%2520%252B%25201%255D%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520temp%2520%253D%2520lists%255Bj%255D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520lists%255Bj%255D%2520%253D%2520lists%255Bj%2520%252B%25201%255D%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520lists%255Bj%2520%252B%25201%255D%2520%253D%2520temp"
-  style="width: 509px; height: 342px; border:0; transform: scale(1); overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+![Bubble Sort](/Chapter-10/assets/bubbleSort01.png)
 
 * This file has been created using [https://carbon.now.sh](https://carbon.now.sh/).
 
